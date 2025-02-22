@@ -1,2 +1,0 @@
-# Triviafy
-Music trivia app 
