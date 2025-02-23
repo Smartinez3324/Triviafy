@@ -1,0 +1,95 @@
+#title {
+  color: #d79921;
+  font-family: "Roboto Mono";
+  align-items: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+#artist {
+  color: #d79921;
+  font-family: "Roboto Mono";
+  align-items: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Play Button Styling */
+.play-button {
+  position: fixed;
+  bottom: 10%;
+  background: #d79921; /* Gradient background */
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px; /* Larger padding for a bigger button */
+  border: none;
+  border-radius: 50px; /* Rounded corners for a smooth look */
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+}
+
+.play-button:hover {
+  background: #d79921; /* Darker gradient on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Larger shadow when hovered */
+}
+
+.play-button:active {
+  transform: scale(1); /* Return to normal size when clicked */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Reset shadow on click */
+}
+
+.play-button::before {
+  content: '\25B6'; /* Unicode play button symbol */
+  font-size: 20px;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.play-button.moved {
+  bottom: -100px; /* 20px from the bottom of the screen */
+  transition: all 0.5s ease; /* Smooth transition to move the button */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282828;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(50px + 2vmin);
+  color: #d79921;
+  font-family: "Roboto Mono";
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#albumArt {
+  width: 300px; /* Set width and height to control size */
+  height: 300px;
+  position: fixed;
+  align-items: center;
+  bottom: 25%;
+  object-fit: cover; /* Ensure the image covers the container proportionally */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow for better visibility */
+  margin-bottom: 20px; /* Adds space between album art and the rest of the content */
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
